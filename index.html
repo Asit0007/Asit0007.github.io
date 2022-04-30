@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moralis-DEX</title>
+    <!-- Moralis SDK code -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="logo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <img src="img/my-logo.png" class="logo">
+          </div> 
+          <button class="buy-crypto" >Buy Crypto</button>       
+        </div>
+
+        <div class="login">
+          <button class="btn-login" >Metamask Login</button>
+          <button class="btn-logout" >Logout</button>
+        </div> 
+      </div>
+    </section>
+    <h3>Wallet Balances:</h3>
+    <table class="table">
+      <thead>
+        <tr>
+            <th class="col1">#</th>
+            <th class="col2">Symbol</th>
+            <th class="col3">Amount</th>
+            <th class="col4">Action</th>
+        </tr>
+      </thead>
+      <tbody class="js-token-balances"></tbody>
+    </table>
+    
+    <form action="#" method="post" class="exchange-form">
+      <div class="swap-form">
+        <div class="form-row">
+          <label>
+            <span class="js-from-token"></span>
+            Amount
+            <input type="number" name="from-amount" class="js-from-amount" disabled/>
+          </label> 
+        </div>
+
+        <div class="toToken-row">
+          <label>
+            Swap to:
+            <select name="to-token" ></select>    
+          </label>
+        </div>
+      </div>  
+      <div class="js-amount-error error"></div> 
+
+      <div class="form-row">
+        <button type="submit" class="js-submit" disabled>Get Quote</button>
+        <button class="js-cancel" disabled>Cancel</button>
+      </div>
+
+    </form>
+
+    <div class="js-quote-container"></div>
+
+    <!-- external js file -->
+    <script src="./dex.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+html,
+body {
+  background: url("./img/bg.png");
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+#logo img {
+  padding-top: 20px;
+}
+label,
+.color_white {
+  color: white;
+  height: 25px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+button {
+  margin: 10px 10px 10px 10px;
+  border-radius: 200px;
+  height: 25px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+}
+.login {
+  margin-top: 20px;
+  align-self: flex-start;
+  justify-content: flex-end;
+}
+.logo {
+  height: 100px;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.col1 {
+  padding-right: 39px;
+  padding-left: 0px;
+}
+.col2 {
+  padding-right: 80px;
+  padding-left: 30px;
+}
+.col3 {
+  padding-left: 30px;
+  padding-right: 60px;
+}
+.col4 {
+  padding-left: 50px;
+  padding-right: 0px;
+}
+.col1-value {
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.col2-value {
+  padding-right: 40px;
+  padding-left: 30px;
+}
+.col3-value {
+  padding-left: 0px;
+  padding-right: 30px;
+}
+.col4-value {
+  padding-right: 0px;
+  padding-left: 20px;
+}
+.error {
+  color: red;
+}
+.swap-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+}
